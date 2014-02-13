@@ -13,10 +13,4 @@ Another option could be to have an interactivity feature that allows the user to
 2.
 ___________________________________
 
-Examples of tabular information from around the web:
-
-http://www.washingtonpost.com/wp-srv/special/sports/2014-olympics/history/
- 
-http://visual.ly/state-unemployment-august-2011
- 
-http://www.nytimes.com/interactive/2012/11/05/us/politics/what-will-swing-the-swing-states.html
+Examples of tabular information from around the web
