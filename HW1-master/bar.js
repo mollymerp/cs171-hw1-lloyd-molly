@@ -27,9 +27,10 @@ var margin = {top: 50, bottom: 10, left:300, right: 40};
    
 	
     d3.tsv("unemp_states_us_nov_2013.tsv", function(data) {
-    
+	
       var max = d3.max(data, function(d) { return d.Rate; } );
       var min = 0;
+      
 
       xScale.domain([min, max]);
       yScale.domain(data.map(state));
@@ -56,9 +57,9 @@ var margin = {top: 50, bottom: 10, left:300, right: 40};
    		 .attr("y", function(d) { return (bar_height/2)+5;})
    		 .text(function(d) {return d.State;})
    		 
- d3.select("input").on("change",reorder());
+ //d3.select("input").on("change",reorder());
  	
- 	function reorder(d,i) {
+ 	/*function reorder(d,i) {
  		svg.selectAll("rect")
  			if (d3.select(this).attr("id") != "stateSort") {
  				svg.selectAll("rect").attr("id", "stateSort")
@@ -69,5 +70,5 @@ var margin = {top: 50, bottom: 10, left:300, right: 40};
    		.transition()
   		.duration(750)
    		.delay(function(d, i) { return i * 10; })
-  		.attr("transform", function(d, i) { return "translate(0," + yScale(d.Rank)+")"; })}; 
+  		.attr("transform", function(d, i) { return "translate(0," + yScale(d.Rank)+")"; })}; */
     });

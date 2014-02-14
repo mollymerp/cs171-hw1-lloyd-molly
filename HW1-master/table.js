@@ -90,7 +90,7 @@ cells.attr("class", function(d,i){return "col" + i;})
                 //preserves rate color effect                     
                      tbody.selectAll("tr td.col2")
      					  //.style("background-color", function(d,i) {return color(i)});  
-     					  .style("background-color", function(d,i) {return color(d*3)});                  
+     					  .style("background-color", function(d,i) {return color(d*5)});                  
                                 });
 //creates bar chart column
 rows.insert("td").append("svg")
@@ -156,15 +156,13 @@ var color = d3.scale.linear()
   .range(["orangered", "silver"]);
   
   
-console.log(color(0));
-console.log(color(9));
-console.log(color(2.6));   
+  
  
 //invokes color scale for rate column
 tbody.selectAll("tr td.col2")
 //comment out first implementation task
      //.style("background-color", function(d,i) {return color(i)});
-     .style("background-color", function(d,i) {return color(d*3)});        
+     .style("background-color", function(d,i) {return color(d*5)});        
 
 
       });
